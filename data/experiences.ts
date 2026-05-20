@@ -1,6 +1,7 @@
 import { 
   Component, Gamepad2, BookOpen, LayoutTemplate, 
-  Brain, UserCircle, MousePointerClick, Palette 
+  Brain, UserCircle, MousePointerClick, Palette,
+  Wind, Keyboard, CreditCard, Loader
 } from "lucide-react";
 
 export const categories = [
@@ -10,7 +11,8 @@ export const categories = [
   "Story Teller",
   "Landing Pages",
   "Visual Experiments",
-  "Kids Friendly"
+  "Kids Friendly",
+  "Productivity Fun"
 ];
 
 export const experiences = [
@@ -42,6 +44,15 @@ export const experiences = [
     color: "bg-zinc-100 text-zinc-600 dark:bg-zinc-800/50 dark:text-zinc-400",
   },
   {
+    id: "pricing-template",
+    title: "Pro Pricing",
+    description: "A modern, converting pricing page with a billing toggle.",
+    category: "Landing Pages",
+    icon: CreditCard,
+    href: "/pricing-template",
+    color: "bg-green-100 text-green-600 dark:bg-green-900/30 dark:text-green-400",
+  },
+  {
     id: "reaction-timer",
     title: "Reaction Timer",
     description: "Test your reflexes in this lightning-fast mini-game.",
@@ -49,15 +60,6 @@ export const experiences = [
     icon: Gamepad2,
     href: "/reaction-timer",
     color: "bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400",
-  },
-  {
-    id: "memory-game",
-    title: "Emoji Memory",
-    description: "A classic card-matching memory game with a polished UI.",
-    category: "Kids Friendly",
-    icon: Brain,
-    href: "/memory-game",
-    color: "bg-pink-100 text-pink-600 dark:bg-pink-900/30 dark:text-pink-400",
   },
   {
     id: "tap-counter",
@@ -69,6 +71,24 @@ export const experiences = [
     color: "bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400",
   },
   {
+    id: "word-scramble",
+    title: "Word Scramble",
+    description: "Unscramble the developer-themed words to score points.",
+    category: "Games",
+    icon: Keyboard,
+    href: "/word-scramble",
+    color: "bg-indigo-100 text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-400",
+  },
+  {
+    id: "memory-game",
+    title: "Emoji Memory",
+    description: "A classic card-matching memory game with a polished UI.",
+    category: "Kids Friendly",
+    icon: Brain,
+    href: "/memory-game",
+    color: "bg-pink-100 text-pink-600 dark:bg-pink-900/30 dark:text-pink-400",
+  },
+  {
     id: "gradient-maker",
     title: "Mesh Gradients",
     description: "Generate and copy beautiful CSS background gradients.",
@@ -76,6 +96,24 @@ export const experiences = [
     icon: Palette,
     href: "/gradient-maker",
     color: "bg-cyan-100 text-cyan-600 dark:bg-cyan-900/30 dark:text-cyan-400",
+  },
+  {
+    id: "css-loaders",
+    title: "CSS Loaders",
+    description: "A collection of minimal, copy-paste ready CSS animations.",
+    category: "Visual Experiments",
+    icon: Loader,
+    href: "/css-loaders",
+    color: "bg-teal-100 text-teal-600 dark:bg-teal-900/30 dark:text-teal-400",
+  },
+  {
+    id: "breathe",
+    title: "Breathe",
+    description: "Take a moment to relax with this guided 4-7-8 breathing exercise.",
+    category: "Productivity Fun",
+    icon: Wind,
+    href: "/breathe",
+    color: "bg-sky-100 text-sky-600 dark:bg-sky-900/30 dark:text-sky-400",
   },
   {
     id: "story-teller",
