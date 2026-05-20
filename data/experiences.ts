@@ -2,7 +2,8 @@ import {
   Component, Gamepad2, BookOpen, LayoutTemplate, 
   Brain, UserCircle, MousePointerClick, Palette,
   Wind, Keyboard, CreditCard, Loader, 
-  Map as MapIcon, Music, LineChart, KanbanSquare
+  Map as MapIcon, Music, LineChart, KanbanSquare,
+  Timer, TextCursor, Link2, Sparkles
 } from "lucide-react";
 
 export const categories = [
@@ -18,7 +19,7 @@ export const categories = [
 ];
 
 export const experiences = [
-  // ... (Previous 12 experiences)
+  // ... (Previous 16 experiences remain the same, adding the 4 new ones below)
   {
     id: "ui-playground",
     title: "UI Playground",
@@ -127,11 +128,10 @@ export const experiences = [
     href: "/story-teller",
     color: "bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400",
   },
-  // --- NEW ADVANCED EXPERIENCES ---
   {
     id: "pathfinder",
     title: "Algorithm Visualizer",
-    description: "Draw walls and watch BFS pathfinding traverse the grid in real-time.",
+    description: "Draw walls and watch BFS pathfinding traverse the grid.",
     category: "Advanced Tech",
     icon: MapIcon,
     href: "/pathfinder",
@@ -149,7 +149,7 @@ export const experiences = [
   {
     id: "analytics-dashboard",
     title: "Enterprise Dashboard",
-    description: "A complex, data-rich UI featuring custom SVG charts and metrics.",
+    description: "A complex, data-rich UI featuring custom SVG charts.",
     category: "Landing Pages",
     icon: LineChart,
     href: "/analytics-dashboard",
@@ -158,10 +158,47 @@ export const experiences = [
   {
     id: "kanban-board",
     title: "Kanban Flow",
-    description: "A fully functional drag-and-drop task board with local persistence.",
+    description: "A fully functional drag-and-drop task board with local storage.",
     category: "Productivity Fun",
     icon: KanbanSquare,
     href: "/kanban-board",
     color: "bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400",
-  }
+  },
+  // --- NEW MODULES (PACK 4) ---
+  {
+    id: "focus-station",
+    title: "Focus Station",
+    description: "A beautiful Pomodoro timer to help you stay productive.",
+    category: "Productivity Fun",
+    icon: Timer,
+    href: "/focus-station",
+    color: "bg-rose-100 text-rose-600 dark:bg-rose-900/30 dark:text-rose-400",
+  },
+  {
+    id: "typing-test",
+    title: "Typing Speed Test",
+    description: "Test your WPM (Words Per Minute) and accuracy in real-time.",
+    category: "Games",
+    icon: TextCursor,
+    href: "/typing-test",
+    color: "bg-indigo-100 text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-400",
+  },
+  {
+    id: "link-tree",
+    title: "Social Links Page",
+    description: "A highly polished, customizable 'link-in-bio' landing page template.",
+    category: "Landing Pages",
+    icon: Link2,
+    href: "/link-tree",
+    color: "bg-lime-100 text-lime-600 dark:bg-lime-900/30 dark:text-lime-400",
+  },
+  {
+    id: "particle-sandbox",
+    title: "Particle Sandbox",
+    description: "An interactive HTML5 Canvas experiment with physics.",
+    category: "Visual Experiments",
+    icon: Sparkles,
+    href: "/particle-sandbox",
+    color: "bg-orange-100 text-orange-600 dark:bg-orange-900/30 dark:text-orange-400",
+  },
 ];
