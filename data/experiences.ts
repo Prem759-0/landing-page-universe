@@ -1,7 +1,8 @@
 import { 
   Component, Gamepad2, BookOpen, LayoutTemplate, 
   Brain, UserCircle, MousePointerClick, Palette,
-  Wind, Keyboard, CreditCard, Loader
+  Wind, Keyboard, CreditCard, Loader, 
+  Map as MapIcon, Music, LineChart, KanbanSquare
 } from "lucide-react";
 
 export const categories = [
@@ -12,10 +13,12 @@ export const categories = [
   "Landing Pages",
   "Visual Experiments",
   "Kids Friendly",
-  "Productivity Fun"
+  "Productivity Fun",
+  "Advanced Tech"
 ];
 
 export const experiences = [
+  // ... (Previous 12 experiences)
   {
     id: "ui-playground",
     title: "UI Playground",
@@ -64,7 +67,7 @@ export const experiences = [
   {
     id: "tap-counter",
     title: "10-Second Tap Rush",
-    description: "How many times can you click in 10 seconds? Break the high score.",
+    description: "How many times can you click in 10 seconds?",
     category: "Games",
     icon: MousePointerClick,
     href: "/tap-counter",
@@ -109,7 +112,7 @@ export const experiences = [
   {
     id: "breathe",
     title: "Breathe",
-    description: "Take a moment to relax with this guided 4-7-8 breathing exercise.",
+    description: "Take a moment to relax with this guided breathing exercise.",
     category: "Productivity Fun",
     icon: Wind,
     href: "/breathe",
@@ -124,4 +127,41 @@ export const experiences = [
     href: "/story-teller",
     color: "bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400",
   },
+  // --- NEW ADVANCED EXPERIENCES ---
+  {
+    id: "pathfinder",
+    title: "Algorithm Visualizer",
+    description: "Draw walls and watch BFS pathfinding traverse the grid in real-time.",
+    category: "Advanced Tech",
+    icon: MapIcon,
+    href: "/pathfinder",
+    color: "bg-violet-100 text-violet-600 dark:bg-violet-900/30 dark:text-violet-400",
+  },
+  {
+    id: "synth-keyboard",
+    title: "Web Synth",
+    description: "A playable polyphonic synthesizer built with the Web Audio API.",
+    category: "Advanced Tech",
+    icon: Music,
+    href: "/synth-keyboard",
+    color: "bg-fuchsia-100 text-fuchsia-600 dark:bg-fuchsia-900/30 dark:text-fuchsia-400",
+  },
+  {
+    id: "analytics-dashboard",
+    title: "Enterprise Dashboard",
+    description: "A complex, data-rich UI featuring custom SVG charts and metrics.",
+    category: "Landing Pages",
+    icon: LineChart,
+    href: "/analytics-dashboard",
+    color: "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400",
+  },
+  {
+    id: "kanban-board",
+    title: "Kanban Flow",
+    description: "A fully functional drag-and-drop task board with local persistence.",
+    category: "Productivity Fun",
+    icon: KanbanSquare,
+    href: "/kanban-board",
+    color: "bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400",
+  }
 ];
