@@ -3,7 +3,8 @@ import {
   Brain, UserCircle, MousePointerClick, Palette,
   Wind, Keyboard, CreditCard, Loader, 
   Map as MapIcon, Music, LineChart, KanbanSquare,
-  Timer, TextCursor, Link2, Sparkles
+  Timer, TextCursor, Link2, Sparkles,
+  Network, PaintBucket, FileCode, Orbit
 } from "lucide-react";
 
 export const categories = [
@@ -15,11 +16,12 @@ export const categories = [
   "Visual Experiments",
   "Kids Friendly",
   "Productivity Fun",
-  "Advanced Tech"
+  "Advanced Tech",
+  "Creative Tools"
 ];
 
 export const experiences = [
-  // ... (Previous 16 experiences remain the same, adding the 4 new ones below)
+  // ... (Keep the previous 20 experiences intact)
   {
     id: "ui-playground",
     title: "UI Playground",
@@ -164,7 +166,6 @@ export const experiences = [
     href: "/kanban-board",
     color: "bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400",
   },
-  // --- NEW MODULES (PACK 4) ---
   {
     id: "focus-station",
     title: "Focus Station",
@@ -201,4 +202,41 @@ export const experiences = [
     href: "/particle-sandbox",
     color: "bg-orange-100 text-orange-600 dark:bg-orange-900/30 dark:text-orange-400",
   },
+  // --- NEW MODULES (PACK 5) ---
+  {
+    id: "flow-builder",
+    title: "Flow Builder",
+    description: "A visual node editor. Drag, drop, and connect logic nodes with SVG curves.",
+    category: "Advanced Tech",
+    icon: Network,
+    href: "/flow-builder",
+    color: "bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400",
+  },
+  {
+    id: "pixel-studio",
+    title: "Pixel Studio",
+    description: "Draw pixel art on a grid and export it directly to PNG.",
+    category: "Creative Tools",
+    icon: PaintBucket,
+    href: "/pixel-studio",
+    color: "bg-yellow-100 text-yellow-600 dark:bg-yellow-900/30 dark:text-yellow-400",
+  },
+  {
+    id: "markdown-brain",
+    title: "Markdown Brain",
+    description: "A local-first note-taking app with live parsing and persistent storage.",
+    category: "Productivity Fun",
+    icon: FileCode,
+    href: "/markdown-brain",
+    color: "bg-sky-100 text-sky-600 dark:bg-sky-900/30 dark:text-sky-400",
+  },
+  {
+    id: "physics-sandbox",
+    title: "Physics Sandbox",
+    description: "A 2D rigid-body engine. Spawn, drag, and throw objects with gravity.",
+    category: "Advanced Tech",
+    icon: Orbit,
+    href: "/physics-sandbox",
+    color: "bg-rose-100 text-rose-600 dark:bg-rose-900/30 dark:text-rose-400",
+  }
 ];
